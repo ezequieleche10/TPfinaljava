@@ -9,11 +9,11 @@ public class ConexionBD {
 
     Connection Cone = null;
 	//static String Url = "jdbc:mysql://localhost:3306/";
-    static  String Url="jdbc:mysql://mysql25655-finaljava.mycloud.by/Comentautos_DB";
+    static  String Url="jdbc:mysql://127.13.104.130:3306/tpjava";
 	static String dbName = "Comentautos_DB";/*nombre de la base de datos*/
 	static String driver = "com.mysql.jdbc.Driver";
-	static String userName = "root"; 
-	static String password = "";
+	static String userName = "adminmV9ZeN7"; 
+	static String password = "4uKd49NUj_-C";
 	
 	
 	
