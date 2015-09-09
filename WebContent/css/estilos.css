@@ -1,0 +1,20 @@
+.color_fondo
+{
+	background: #ccc;
+	text-align: center;
+}
+
+.mi_barra
+{
+	text-align: center;
+}
+
+#pruebita ul
+{
+display: none;
+}
+
+#pruebita li:hover ul
+{
+	display:block;
+}
