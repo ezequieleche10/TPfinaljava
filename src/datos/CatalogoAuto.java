@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
+import javax.swing.JOptionPane;
+
 import modelos.Auto;
 
 public class CatalogoAuto {
@@ -81,11 +83,13 @@ public class CatalogoAuto {
 	ArrayList<Auto> AutosAll = new ArrayList<Auto>();
 		
 		try {
-			String SQLCons= "Select "+CAMPOS+" FROM auto";
+			String SQLCons= "select "+CAMPOS+" from auto";
+		
 			ConexionBD conecta = new ConexionBD();
 			conecta.OpenConection();
 			PreparedStatement stmt = conecta.Cone.prepareStatement(SQLCons);
 			ResultSet rta = stmt.executeQuery();
+			JOptionPane.showMessageDialog(null,stmt);
 			 	while(rta.next())
 						{		Auto AutoDev = new Auto();
 					 			AutoDev.setDescripcionAuto(rta.getString("descripcion"));
