@@ -89,7 +89,7 @@ public class CatalogoAuto {
 			conecta.OpenConection();
 			PreparedStatement stmt = conecta.Cone.prepareStatement(SQLCons);
 			ResultSet rta = stmt.executeQuery();
-			JOptionPane.showMessageDialog(null,stmt);
+		
 			 	while(rta.next())
 						{		Auto AutoDev = new Auto();
 					 			AutoDev.setDescripcionAuto(rta.getString("descripcion"));
